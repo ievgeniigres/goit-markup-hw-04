@@ -373,9 +373,40 @@ margin-right: 50px;
 }
 
 
- 
+/*===clients===*/
 
+.our_clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.clients_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+
+    color: var(--clients-logo);
+
+    border: 1px solid var(--clients-logo);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.clients_icon{
+    fill: currentColor;
+}
 
 /*====portfolio====*/
 
@@ -452,6 +483,8 @@ margin-right: 50px;
     line-height: 1.87;
 }
 
+/*====footer====*/
+
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -476,6 +509,11 @@ margin-right: 50px;
 
 /*===footer contacts====*/
 
+.footer_wrapper{
+    display: flex;
+    align-items: baseline;
+}
+
 .footer .address_footer{
     margin-bottom: 9px;
     color: var(--primary-white-color);
@@ -485,8 +523,14 @@ margin-right: 50px;
     line-height: 1.71;
 }
 
-.footer_contact .contact{
+.footer_contact{
     display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.footer_contact .contact{
+    /*display: flex;*/
     color: rgba(255, 255, 255, 0.6); 
     font-style: normal;
     font-size: 14px;
@@ -498,4 +542,49 @@ margin-right: 50px;
     margin-bottom: 9px;
 }
 
+.footer_social_title{
+    margin-bottom: 20px;
 
+    color:var(--primary-white-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.footer_social{
+    width: 206px;
+    margin-top:72px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: 70px;
+}
+
+.footer_social_list{
+    display: flex;
+}
+
+.footer_social_item:not(:last-child) {
+margin-right: 10px;
+}
+
+.footer_social_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color:var(--primary-white-color);
+}
+
+.footer_social_icon{
+    fill: currentColor;
+}
+
+.footer_social_link:hover,
+.footer_social_link:focus {
+    background-color: var(--accent-color);
+}
