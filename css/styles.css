@@ -411,15 +411,23 @@ margin-right: 50px;
     width: 170px;
     height: 90px;
 
-    color: var(--clients-logo);
+    /*color: var(--clients-logo);*/
 
     border: 1px solid var(--clients-logo);
     border-radius: 4px;
 }
 
+.clients_icon {
+    fill:rgba(175, 177, 184, 1);
+}
+
+.clients-link:hover .clients_icon,
+.clients-link:focus .clients_icon {
+    fill: var(--accent-color);
+}
+
 .clients-link:hover,
 .clients-link:focus {
-    color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 .clients-link svg {
