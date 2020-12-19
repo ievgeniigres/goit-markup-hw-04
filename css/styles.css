@@ -486,8 +486,9 @@ margin-right: 50px;
  }
 
 .work_list .item{
-    flex-basis: calc(100% / 3 - 30px);
-    margin: 15px;
+    flex-basis: calc(100% / 3);
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .work_list .title{
@@ -499,9 +500,11 @@ margin-right: 50px;
     line-height:2;
     letter-spacing: 0.06em;
 }
-
-.work_list .item:hover,
-.work_list .item:focus{
+.work_list .item .holder {
+    border: 1px solid transparent;
+}
+.work_list .item:hover .holder,
+.work_list .item:focus .holder{
     border: 1px solid var(--work-list-border);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
